@@ -675,24 +675,22 @@ img {
     height: 30px;
     border: 1px solid rgba(0, 0, 0, 0.1);
     border-radius: 50%;
-    /* box-shadow: var(--shadow-modal); */
     display: flex;
     align-items: center;
     justify-content: center;
     background: transparent;
     cursor: pointer;
-    color: #2196F3;
+    color: #000;
 }
 .modal-close:hover,
 .modal-close:focus {
-    /* fill: var(--accent-color); */
     box-shadow: var(--shadow-modal);
+    color: var(--accent-color);
 }
-.modal-close:hover + .close-icon,
-.modal-close:focus +.close-icon {
-    fill: var(--accent-color);
-    /* box-shadow: var(--shadow-modal); */
+.close-icon {
+    fill: currentColor;
 }
+
 .is-hidden {
     opacity: 0;
     visibility: hidden;
@@ -736,7 +734,7 @@ img {
     position: absolute;
     left: 12px;
     top: 50%;
-    transform: translateY(-50%);
+    /* transform: translateY(-50%); */
 
     transition-property: fill;
     transition-duration: 250ms;
@@ -763,16 +761,66 @@ img {
     letter-spacing: 0.01em;
     color: rgba(117, 117, 117, 0.5);
 }
+.modal-check {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+    margin-bottom: 30px;
+    position: relative;
+}
+.check-input {
+    padding: 0;
+    background-color: #FFFFFF;
+    border: 1px solid #000;
+    /* display: flex; */
+    /* position: relative; */
+}
+.check-input:hover,
+.check-input:focus {
+    background-color: #2196F3;
+}
+.check-label {
+    margin-left: 8px;
 
+    font-size: 14px;
+    line-height: 1.71;
+    letter-spacing: 0.03em;
+    color: #757575;
+}
+.check-pact {
+    color: #2196F3;
+    text-decoration: underline;
+}
+.check-icon {
+    position: absolute;
+    left: 10px;
+    top: 5px;
 
+    background-color: #fff;
+    border: 1px solid #000;
+
+    transition-property: background-color;
+    transition-duration: 250ms;
+    transition-timing-function: var(--timing-function-hover);
+}
+.check-icon:hover,
+.check-icon:focus {
+    background-color: #2196F3;
+}
+.check-icon :active {
+    background-color: #2196F3;
+}
 
 .buttom-send {
+    display: flex;
+    justify-content: center;
+
     border: 0;
     border-radius: 4px;
     padding: 10px 52px;
     /* margin-right: 164px; */
     /* margin-bottom: 40px; */
-    /* margin-left: 164px; */
+    margin-left: 125px;
 
 
     background-color: var(--accent-color);
@@ -781,16 +829,19 @@ img {
     font-weight: 700;
     font-size: 16px;
     line-height: 1.88;
-        align-items: center;
-        text-align: center;
+        /* align-items: center; */
+        /* text-align: center; */
     letter-spacing: 0.06em;
     cursor: pointer;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
 
+    transition-property: background-color;
+    transition-duration: 250ms;
+    transition-timing-function: var(--timing-function-hover);
 }
 .buttom-send:hover,
 .buttom-send:focus {
-
+    background-color: var(--button-hero-hover);
 }
 
 
