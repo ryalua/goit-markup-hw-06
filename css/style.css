@@ -1020,6 +1020,14 @@ img {
     line-height: 1.88;
     letter-spacing: 0.06em;
     cursor: pointer;
+
+    transition-property: background-color;
+    transition-duration: 250ms;
+    transition-timing-function: var(--timing-function-hover);
+}
+.form-btn:hover,
+.form-btn:focus {
+    background-color: var(--button-hero-hover);
 }
 .form-icon {
     margin-left: 10px;
