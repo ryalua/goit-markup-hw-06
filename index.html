@@ -388,16 +388,17 @@
             placeholder="Введіть текст" 
           ></textarea>
         </div>
-        
-        <div class="modal-check">
-          <input class="check-input visually-hidden" type="checkbox" name="pact" id="pact">
-          <label class="check-label" for="pact">Погоджуюся з розсилкою та приймаю 
-            <a href="#"><span class="check-pact">Умови договору</span></a>
-          </label>
-          <svg class="check-icon" width="16" height="15">
-            <use href="./images/icons.svg#icon-check"></use>
-          </svg>
-        </div>
+        <!-------------Кастомний чекбокс--------------->
+        <label class="check-label">
+          <input class="check-input" type="checkbox">
+          
+          <span class="check-box">
+            <svg class="check-icon" width="16" height="15">
+              <use href="./images/icons.svg#icon-check"></use>
+            </svg>
+          </span>
+          <span class="check-text">Погоджуюся з розсилкою та приймаю <a href="#" class="check-pact">Умови договору</a></span>
+        </label>
 
         <button class="buttom-send" type="submit">Відправити</button>
       </form>
