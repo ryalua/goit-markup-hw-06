@@ -461,18 +461,18 @@
         </ul>
       </div>
       <!-- Форма на розсилку -->
-      <form class="form-footer">
-        <div class="form-fild">
-          <label class="form-label" for="user_email">Підпишіться на розсилку</label>
-          <input class="form-input" type="email" name="email" id="user_email" placeholder="E-mail">
-        
-        </div>
-        <button class="form-btn" type="submit">Підписатися
-          <svg class="form-icon" width="24" height="24">
-            <use href="./images/icons.svg#icon-send"></use>
-          </svg>
-        </button>
-      </form>
+
+      <div class="form-fild">
+        <p class="form-label">Підпишіться на розсилку</p>
+        <form class="form-footer">
+          <input class="form-input" type="email" name="email" aria-label="Email" placeholder="E-mail">
+          <button class="form-btn" type="submit">Підписатися
+            <svg class="form-icon" width="24" height="24">
+              <use href="./images/icons.svg#icon-send"></use>
+            </svg>
+          </button>
+        </form>
+      </div>
 
     </div>
   </footer>

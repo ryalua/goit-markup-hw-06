@@ -826,11 +826,6 @@ img {
 }
 
 
-
-
-
-
-
 .buttom-send {
     display: flex;
     justify-content: center;
@@ -926,7 +921,7 @@ img {
 }
 /* ------ Soc net --------*/
 .soc-footer {
-    /* margin-left: 70px; */
+    margin-left: 70px;
 }
 .footer-title {
     margin-bottom: 20px;
@@ -985,17 +980,13 @@ img {
     display: flex;
     align-items:flex-end;
 
-    /* margin-left: auto; */
+    margin-left: auto;
 }
 .form-fild {
-    /* position: relative; */
+    position: relative;
 
 }
 .form-label {
-    /* position: absolute; */
-    /* left: 0; */
-    /* top: 0; */
-
     font-weight: 700;
     font-size: 14px;
     line-height: 1.14;
@@ -1004,13 +995,9 @@ img {
     
     color: var(--button-text-color );
 }
-.form-input {
-    /* position: absolute; */
-    /* left: auto; */
-    /* bottom: 0; */
-
-    /* width: 358px; */
-    width: 100%;
+.form-input { 
+    width: 358px;
+    /* width: 100%; */
     height: 50px;
 
     margin-top: 20px;
@@ -1026,10 +1013,6 @@ img {
     color: rgba(255, 255, 255, 0.6);
 }
 .form-btn {
-    /* position: absolute; */
-    /* bottom: 0; */
-    /* right: auto; */
-
     display: flex;
     align-items: center;
 
