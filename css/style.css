@@ -721,6 +721,7 @@ img {
     background-color: transparent;
     color: var(--logo-heder-color);
     font-size: 12px;
+    outline: none;
 
     transition-property: box-shadow, border-color;
     transition-duration: 250ms;
@@ -735,7 +736,7 @@ img {
     position: absolute;
     left: 12px;
     top: 50%;
-    /* transform: translateY(-50%); */
+    transform: translateY(-50%);
 
     transition-property: fill;
     transition-duration: 250ms;
@@ -756,6 +757,7 @@ img {
     border-radius: 4px;
     font-size: 12px;
     resize: none;
+    outline: none;
 }
 .modal-comment::placeholder {
     font-size: 12px;
@@ -800,6 +802,9 @@ img {
 
     border: 2px solid var(--title-text-color);
     border-radius: 2px;
+}
+.check-input:focus+.check-box {
+    border-color: var(--accent-color);
 }
 .check-icon {
     display: block;
@@ -984,7 +989,7 @@ img {
 }
 .form-fild {
     position: relative;
-
+    margin-left: auto;
 }
 .form-label {
     font-weight: 700;
